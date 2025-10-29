@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+        <meta author="Viktor Radelytskyi"/>
+        <link rel="stylesheet" href="./general.css"/>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-cont">
+                <div class="brand-name-cont">
+                    <h2 class="brand-name">Respy<h2>
+                    <h4 class="brand-subname">Your personalized AI assistant that replies exactly like you</h4>
+                </div>
+                <nav>
+                    <div class="menu-cont">
+                        <div class="menu-item" id="home">
+                            Home
+                        </div>
+                        <div class="menu-item" id="contact">
+                            Contact
+                        </div>
+                        <div class="menu-item" id="gallery">
+                            Gallery
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main-section">
+            <section>
+                <h1 class="section-header">
+                    Have a question about our product?
+                </h1>
+                <h2 class="subheader">
+                    Leave your question below and our team will contact you!
+                </h2>
+                <div class="section-content">
+                    <form>
+                        <label for="email">Your email:</label>
+                        <input 
+                        type="text"
+                        id="email"
+                        placeholder="e.g. john.doe@gmail.com"
+                        name="email"
+                        />
+                        <p>The topic:</p>
+                        <div class="email-topic">
+                            <input type="radio" name="topic" id="productTopic" value="question about the product"/>
+                            <label for="prpductTopic">General question about the product</label>
+                        </div>
+                        <div class="email-topic">
+                            <input type="radio" name="topic" id="cooperationTopic" value="Cooperation proposal"/>
+                            <label for="cooperationTopic">Cooperation proposal</label>
+                        </div>
+                        <div class="email-topic">
+                            <input type="radio" name="topic" id="otherTopic" value="other topic"/>
+                            <label for="otherTopic">Other topic</label>                            
+                        </div>   
+                        
+                        <textarea 
+                        placeholder="Your message here..."
+                        name="message"
+                        >
+                        </textarea>
+                        <input type="submit" id="submitBtn" value="submit">
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="brand-name-cont">
+                <h4 class="brand-name">Respy</h4>
+                <h6 class="brand-subname">Your personalized AI assistant that replies exactly like you</h6>
+            </div>
+            <div class="follow-us">
+                <h5>Follow our social media!</h5>
+                <div class="social-media">
+                    <div class="social-media-item">
+                        <img src="imgs/facebook.svg" alt="facebook image" height="24px" width="24px">
+                        <span>Facebook</span>
+                    </div>
+                    <div class="social-media-item">
+                        <img src="imgs/linkedin.svg" alt="linkedin image" height="24px" width="24px">
+                        <span>LinkedIn</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ask-question">
+                <h5>Have a question? Contact us</h5>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <img src="imgs/phone.svg" alt="phone image" height="24px" width="24px">
+                        <span>(+48) 733 847 486</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="imgs/email.svg" alt="email image" height="24px" width="24px">
+                        <span>support@respy.com</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="./navigation.js"></script>
+        <script src="./validate-email.js"></script>
+    </body>
+</html>
