@@ -273,6 +273,10 @@ video{
     }
 
     .header-cont{
-        gap: 0.75rem;
+        gap: 1rem;
+    }
+
+    .menu-cont{
+        padding-right: 1rem;
     }
 }
